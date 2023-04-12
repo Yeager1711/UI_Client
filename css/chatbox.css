@@ -1,5 +1,6 @@
 .chatbox {
   max-width: 50rem;
+  width: 90%;
   margin: 5rem auto;
   background-color: #f5f5f5;
   border-radius: 1rem;
@@ -76,6 +77,10 @@
   border-radius: 1rem;
   padding: 1rem;
   resize: none;
+  font-size: 16px;
+}
+.chatbox .chat-form textarea::placeholder {
+  font-size: 1.45rem;
 }
 .chatbox .chat-form button {
   background-color: #542afb;
