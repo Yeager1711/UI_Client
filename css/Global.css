@@ -35,57 +35,19 @@ button {
   font-size: 1.5rem;
   border-radius: 5rem;
 }
-
-.btn-upload {
-  padding: 0.7rem 1.5rem;
-  background: #4daf7c;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-.Buttonsuccess {
-  display: inline-block;
-  padding: 0.5rem 2.5rem !important;
-  color: #fff;
-  background: #2ad38b;
-  font-size: 1.4rem !important;
-  border-radius: 5rem;
-  cursor: pointer;
-}
-
-.btn-update {
-  display: inline-block;
-  padding: 0.3rem 2.5rem !important;
-  color: #fff;
-  background: #2ad38b;
-  font-size: 1.4rem !important;
-  border-radius: 5rem;
-  cursor: pointer;
-}
-
-.btn-delete {
-  display: inline-block;
-  padding: 0.5rem 1rem !important;
-  color: #fff;
-  font-size: 1.3rem !important;
-  border-radius: 5rem;
-  cursor: pointer;
-  background: #dc0e0e;
-}
-
-.btn-delete:hover {
-  color: #fff;
-}
-
-.btn-update:hover {
-  transform: scale(0.95);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
-  color: #fff;
-}
-
 .btn:hover {
   letter-spacing: 0.3rem;
   color: #fff;
+}
+
+.btn-view {
+  display: inline-block;
+  margin: 1.5rem 0;
+  padding: 0.5rem 1.5rem;
+  border: 0.2rem solid #c29e75;
+  font-size: 1.5rem;
+  color: #333;
+  border-radius: 0.2rem;
 }
 
 .wrap-title {
