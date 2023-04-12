@@ -124,6 +124,11 @@
         .box {
             padding: 4rem 2rem;
 
+            .title-big {
+                font-family: 'Playfair Display', serif;
+                font-weight: 900;
+            }
+
             &:hover {
                 transition: .3s linear;
                 background-color: #1d2a3a;
@@ -173,7 +178,7 @@
 }
 
 // prices
-.prices-list {
+.prices {
     background-image: url(../images/section-3.jpg);
     min-height: 70vh;
     width: 100%;
@@ -183,7 +188,7 @@
 
     .container-title {
         position: absolute;
-        top: 35%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -192,6 +197,71 @@
         .wrap-title {
             margin: auto;
             display: inline-flex;
+        }
+
+        .title-big{
+            font-family: 'Playfair Display', serif;
+            text-transform: capitalize;
+        }
+    }
+
+    .list-container {
+        position: absolute;
+        top: 65%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: #1d2a3a;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 5rem;
+
+        .box {
+           flex: 1 1 38rem;
+
+            .title-big {
+                font-family: 'Playfair Display', serif;
+                font-size: 4rem !important;
+            }
+
+            .list-info {
+                margin-top: 5rem;
+                ul {
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        width: .3rem;
+                        height: 70%;
+                        background-color: #c29e75;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 1rem;
+                    }
+
+                    li{
+                        display: flex;
+                        align-items: end; 
+                        justify-content: space-between;
+                        margin-bottom: 1.5rem;  
+                        margin-left: 5rem;
+
+                        span {
+                            &:nth-child(1) {
+                                color: #fff;
+                                font-size: 1.9rem;
+                            }
+
+                            &:nth-child(2) {
+                                color: #c29e75;
+                                font-size: 1.8rem;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
