@@ -172,5 +172,29 @@
     }
 }
 
+// prices
+.prices-list {
+    background-image: url(../images/section-3.jpg);
+    min-height: 70vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .container-title {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        max-width: 35rem;
+
+        .wrap-title {
+            margin: auto;
+            display: inline-flex;
+        }
+    }
+}
+
 
     

@@ -138,4 +138,25 @@
   top: 50%;
   transform: translateY(-50%);
   left: -2rem;
+}
+
+.prices-list {
+  background-image: url(../images/section-3.jpg);
+  min-height: 70vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.prices-list .container-title {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  max-width: 35rem;
+}
+.prices-list .container-title .wrap-title {
+  margin: auto;
+  display: inline-flex;
 }/*# sourceMappingURL=style.css.map */
