@@ -1,3 +1,4 @@
+@import url('Global.css');
 
 .chatbox {
 	max-width: 50rem;
@@ -97,14 +98,7 @@
             }
         }
 
-        button {
-            background-color: #542afb;
-            color: #fff;
-            border: none;
-            border-radius: 1rem;
-            padding: .8rem 1.7rem;
-            cursor: pointer;
-        }
+        
     }
 }
 

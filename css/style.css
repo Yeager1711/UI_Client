@@ -1,4 +1,4 @@
-@import url("global.css");
+@import url("Global.css");
 .header {
   position: absolute;
   top: 0;
@@ -39,6 +39,22 @@
   color: #fff;
   font-weight: bolder;
   font-size: 7rem;
+}
+.Home .content-container .desc form {
+  padding: 1.3rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  max-width: 33rem;
+  width: 100%;
+}
+.Home .content-container .desc form .box h3 {
+  font-size: 1.8rem;
+}
+.Home .content-container .desc form .box input {
+  font-size: 16px;
+}
+.Home .content-container .desc form .box input::placeholder {
+  font-size: 1.5rem;
 }
 
 .about-us .about-container {

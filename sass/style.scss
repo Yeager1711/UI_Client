@@ -1,4 +1,4 @@
-@import url('global.css');
+@import url('Global.css');
 
 .header {
     position: absolute;
@@ -43,6 +43,28 @@
                 color: #fff;
                 font-weight: bolder;
                 font-size: 7rem
+            }
+
+            form {
+                padding: 1.3rem;
+                border-radius: .5rem;
+                background: #fff;
+                max-width: 33rem;
+                width: 100%;
+                .box {
+                    h3 {
+                        font-size: 1.8rem;
+                    }
+
+                    input {
+
+                        font-size: 16px;
+                        &::placeholder {
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                }
             }
         }
     }

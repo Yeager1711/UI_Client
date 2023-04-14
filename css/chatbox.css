@@ -1,3 +1,4 @@
+@import url("Global.css");
 .chatbox {
   max-width: 50rem;
   width: 90%;
@@ -81,12 +82,4 @@
 }
 .chatbox .chat-form textarea::placeholder {
   font-size: 1.45rem;
-}
-.chatbox .chat-form button {
-  background-color: #542afb;
-  color: #fff;
-  border: none;
-  border-radius: 1rem;
-  padding: 0.8rem 1.7rem;
-  cursor: pointer;
 }/*# sourceMappingURL=chatbox.css.map */
