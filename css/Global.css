@@ -51,12 +51,12 @@ button {
 
 .btn-submit {
   display: inline-block;
-  padding: 0.8rem 2rem;
+  padding: 0.6rem 2rem;
   background: #542afb;
   color: #fff;
   width: 100%;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   border-radius: 0.8rem;
   margin-top: 1rem;
   cursor: pointer;

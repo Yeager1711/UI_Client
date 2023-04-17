@@ -1,57 +1,32 @@
 @import url("Global.css");
 .full-section {
-  background: #333;
+  padding: 5rem 10%;
+}
+.full-section .fullsection-container .box {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.full-section .fullsection-container .box .box-viewDetail {
+  display: inline-block;
+}
+.full-section .fullsection-container .box .box-viewDetail h3 {
+  font-size: 2.5rem;
+}
+.full-section .fullsection-container .box .box-viewDetail span {
   display: block;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.full-section .fullsection-container .box .box-viewDetail .btn-send {
   align-items: center;
+  font-size: 1.4rem;
 }
-.full-section .gallery-wrapper-copy {
-  columns: 3 25rem;
-  column-gap: 1.5rem;
+.full-section .fullsection-container .box .box-imageDetail {
+  max-width: 50rem;
 }
-.full-section .gallery-wrapper-copy .image-8,
-.full-section .gallery-wrapper-copy .image-10,
-.full-section .gallery-wrapper-copy .image-7,
-.full-section .gallery-wrapper-copy .image-2,
-.full-section .gallery-wrapper-copy .image-6,
-.full-section .gallery-wrapper-copy .image-3,
-.full-section .gallery-wrapper-copy .image-1,
-.full-section .gallery-wrapper-copy .image-9 {
+.full-section .fullsection-container .box .box-imageDetail img {
   width: 100%;
-  height: auto;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.full-section .gallery-wrapper-copy .image-8 {
-  grid-area: Area-2;
-}
-.full-section .gallery-wrapper-copy .image-10 {
-  grid-area: Area-7;
-}
-.full-section .gallery-wrapper-copy .image-7 {
-  grid-area: Area-8;
-}
-.full-section .gallery-wrapper-copy .image-2 {
-  grid-area: Area;
-}
-.full-section .gallery-wrapper-copy .image-6 {
-  grid-area: Area-9;
-}
-.full-section .gallery-wrapper-copy .image-3 {
-  grid-area: Area-5;
-}
-.full-section .gallery-wrapper-copy .image-1 {
-  grid-area: Area-6;
-}
-.full-section .gallery-wrapper-copy .image-9 {
-  grid-area: Area-3;
+  border-radius: 1rem;
 }/*# sourceMappingURL=View-service.css.map */
