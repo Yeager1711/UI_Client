@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Shop</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/Global.css">
+
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+    <section class="cart">
+        <div class="wrap-title">
+            <div class="title"> </div>
+            <span>Cart</span>
+        </div>
+
+        <h2 class="title-big" style="font-family: 'Playfair Display', serif; font-size: 4rem;">My Cart</h2>
+    
+        <div class="cart-container">
+            <div class="cart-info">
+                <div class="box">
+                    <div class="imgProduct-cart">
+                        <img src="./images/products-img/sp1.jpg" alt="">
+                    </div>
+
+                    <div class="infoProduct-cart">
+                        <div class="flex-between">
+                            <h2>DẦU DƯỠNG RÂU TÓC BULLDOG ORIGINAL BEARD OIL</h2>
+                            <span>280,000đ</span>
+                        </div>
+
+                        <p>Thương hiệu: F&Fukaeri</p>
+                        <div class="custom-totalProduct">
+                            <div class="total-curent">Số lượng: 
+                                <div class="button-total">
+                                    <button onclick="decrease()">-</button>
+                                    <input type="number" id="total-cr" value="9" min="1">
+                                    <button onclick="increase()">+</button>
+                                    
+                                    <script>
+                                        let totalElement = document.getElementById('total-cr');
+
+                                        function increase() {
+                                            let total = parseInt(totalElement.value);
+                                            total++;
+                                            totalElement.value = total;
+                                        }
+
+                                        function decrease() {
+                                            let total = parseInt(totalElement.value);
+                                            if(total > 1) {
+                                                total--;
+                                                totalElement.value = total;
+                                            }
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+                            <a href="" style="color: #0ed30e;">Cập nhật</a>
+                            <a href="" style="color: red">Xóa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-checkout">
+                <div class="box"> </div>
+            </div>
+        </div>
+    </section>
+</body>

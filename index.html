@@ -5,24 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barber Shop</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/Global.css">
+
+    <script src="./js/index.js" defer></script>
 </head>
 <body>
-
-    <header class="header">
-        <nav class="header-navbar">
-            <a href="#Home">Home</a>
-            <a href="#About-us">About us</a>
-            <a href="#Service">Service</a>
-            <a href="#">
-                <img src="./images/logo.png" />
+    <div class="wrap-top">
+        <header class="header">
+            <a href="./cart.html" id="btn-cart" class="fa-solid fa-cart-shopping">
+                <span>0</span>
             </a>
-            <a href="#Prices">Prices</a>
-            <a href="./chatbox.html">Sub</a>
-            <a href="./login.html">Login</a>
+    
+            <div id="btn-account" class="fa-solid fa-users">
+                <div class="choose">
+                    <a href="./login.html">Login</a> 
+                    <span>/</span>
+                    <a href="./register.html">Register</a>
+                </div>
+            </div>
+        </header>
+    
+        <nav class="header-navbar">
+            <div class="header-navigation">
+                <div id="btn-bar" class="fa-solid fa-bars" style="display: none;"></div>
+                <a  href="#Home">Home</a>
+                <a  href="#About-us">About us</a>
+                <a  href="#Service">Service</a>
+                <a  href="#">
+                    <img src="./images/logo.png" />
+                </a>
+                <a href="#Prices">Prices</a>
+                <a href="./chatbox.html">Sub</a>
+                <a href="./login.html">Login</a>
+            </div>
         </nav>
-    </header>
+    </div>
 
     <!-- Home -->
     <div class="Home" id="Home">
@@ -37,17 +59,48 @@
                     Create And Renovate Hairstyle
                 </h2>
     
-                <form action="./booking.html">
+                <form id="booking-form" action="./booking.html">
                     <div class="box">
                         <h3>Đặt lịch qua số điện thoại</h3>
-                        <input type="text" id="" name="" placeholder="Nhập SĐT để đặt lịch">
-                        <button class="btn-send">Đặt ngay</button>
+                        <input type="text" id="phone-number" name="phone-number" placeholder="Nhập SĐT để đặt lịch">
+                        <button type="submit" class="btn-send">Đặt ngay</button>
                     </div>
                 </form>
+            
+                <script>
+                    const bookingForm = document.getElementById('booking-form');
+                    const phoneNumberInput = document.getElementById('phone-number');
+                    const submitButton = document.querySelector('.btn-send');
+
+                    submitButton.addEventListener('click', (event) => {
+                        if (phoneNumberInput.value.trim() === '') {
+                            alert('Bạn chưa nhập số điện thoại');
+                            event.preventDefault();
+                            reloadPage();
+                        } else if (isNaN(phoneNumberInput.value)) {
+                            alert('Số điện thoại chỉ được nhập số');
+                            event.preventDefault();
+                            reloadPage();
+                        } else if (phoneNumberInput.value.length < 10 ) {
+                            alert('Số điện thoại không nhỏ hơn 10 số !');
+                            event.preventDefault();
+                            reloadPage();
+                            location.reload();
+                        }else if(phoneNumberInput.value.length > 11) {
+                            alert('Số điện thoại không vượt quá 10 số !');
+                            event.preventDefault();
+                            reloadPage();
+                        }
+                    });
+
+                    function reloadPage() {
+                        location.reload();
+                    }
+                </script>
             </div>
         </div>
     </div>
-    
+
     <!-- about -->
     <section class="about-us" id="About-us">
         <div class="about-container">
@@ -68,6 +121,8 @@
                         Proactively integrate turnkey synergy with world-class portals. Proactively harness sticky users whereas cooperative opportunities. harness exceptional before fully researched services. Seamlessly network client-focused results via interdependent markets.
                     </p>
                 </div>
+
+                <a href="" class="btn-view">View more</a>
             </div>
         </div>
     </section>
@@ -130,7 +185,7 @@
             
                 <div class="list-info">
                     <ul>
-                        <!-- sử dụng Foreach(render thông tin dịch vụ và giá tiền) -->
+                        <!--  Foreach(render name product and price) -->
 
                         <li>
                             <span>Haircuts</span>

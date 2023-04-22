@@ -1,6 +1,6 @@
 @import url('Global.css');
 
-.header {
+.wrap-top {
     position: absolute;
     top: 0;
     left: 0;
@@ -10,14 +10,86 @@
     padding: 2rem 10%;
     z-index: 99 !important;
 
-    .header-navbar {
+    .header {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        justify-content: end;
+        padding: 1rem auto;
+        width: 100%;
 
-        a{
+        #btn-account,
+        #btn-cart { 
+            font-size: 2rem;
             color: #fff;
-            font-size: 1.7rem;
+            padding: 1rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        #btn-cart {
+            position: relative;
+
+            span {
+                position: absolute;
+                top: -.2rem;
+                right: -.3rem;
+                font-size: 1.6rem;
+                padding: .3rem .6rem;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                background: #c29e75;
+                border-radius: 5rem;
+            }
+        }
+
+        #btn-account {
+            position: relative;
+            
+
+            .choose {
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                top: 4rem;
+                background: #fff;
+                width: auto;
+                border-radius: .3rem;
+                padding: 1rem;
+                font-weight: 400;
+                text-align: center;
+
+
+                &.active {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                a{
+                    
+                    display: block;
+                    font-size: 1.5rem;
+                    color: #333;
+                }
+            }
+        }
+    }
+
+    .header-navbar {
+        .header-navigation {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            a{
+                color: #fff;
+                font-size: 1.7rem;
+            }
         }
     }
 }
