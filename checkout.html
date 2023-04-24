@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <!-- fontawesome custom file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/checkout.css">
+    <link rel="stylesheet" href="./css/Global.css">
+
+</head>
+<body>
+    <section class="checkout">
+        <div class="wrap-title">
+            <div class="title"> </div>
+            <span>Checkout</span>
+        </div>
+        
+        <h2 class="title-big" style="font-size: 3rem;">Barber Shop</h2>
+
+        <div class="checkout-container">
+            <div class="left-sideBar">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="./cart.html" style="color: #338dbc">Giỏ hàng</a>
+                    </li>
+    
+                    <li class="breadcrumb-item breadcrumb-item-current">
+                        Thông tin vận chuyển
+                    </li>
+                </ul>
+    
+                <h3 class="title-payment" style="color: #333">Thông tin thanh toán</h3>
+    
+                <h3 style="font-weight: 400;">Bạn đã có tài khoản? 
+                    <a href="./login.html" style="color: #338dbc; font-weight: 400;">Đăng nhập</a>
+                </h3>
+    
+                <form action="">
+                    <div class="box-input">
+                        <input type="text" id="" name="" placeholder="Fullname">
+                    </div>
+    
+                    <div class="box-input">
+                        <input type="text" id="" name="" placeholder="Email">
+                        <input type="number" id="" name="" placeholder="Phone number">
+                    </div>
+    
+                    <div class="box-input">
+                        <input type="text" id="" name="" placeholder="Location">
+                    </div>
+    
+                    <div class="field">
+                        <div class="box-input box-selectOption">
+                            <h3>Chọn tỉnh thành</h3>
+                            <select name="" id="">
+                                <option value="Tiền Giang">Tiền Giang</option>
+                                <option value="Khánh Hòa">Khánh Hòa</option>
+                                <option value="Bình Định">Bình Định</option>
+                                <option value="Đồng Tháp">Đồng Tháp</option>
+                                <option value="Long An">Long An</option>
+                                <option value="Vĩnh Long">Vĩnh Long</option>
+                                <option value="Đồng Nai">Đồng Nai</option>
+                            </select>
+                        </div>
+    
+                        <div class="box-input box-selectOption">
+                            <h3>Chọn</h3>
+                            <select name="" id="">
+                                <option value="">Quận/Huyện</option>
+                            </select>
+                        </div>
+    
+                        <div class="box-input box-selectOption">
+                            <h3>Chọn </h3>
+                            <select name="" id="">
+                                <option value="">Phường / Xã</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="payment-method">
+                        <h3 style="color: #333">Phương thức thanh toán</h3>
+        
+                        <div class="box-payment">
+                            <input type="radio" name="" id="">
+                            <img src="./images/cod.svg" alt="">
+                            <span>Thanh toán khi giao hàng (COD)</span>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn-submit" value="Đặt hàng" style="text-align: center;">
+                </form>
+            </div>
+
+
+            <div class="sidebar">
+                <div class="sideBar-container">
+                    <div class="confirm-order">
+                        <!-- foreach(give out product details in Cart page) -->
+                        <div class="box-confirm">
+                            <div class="img-confirmCart">
+                                <img src="./images/products-img/sp1.jpg" alt="">
+                            </div>
+                            <h3 class="name-confirmCart">DẦU DƯỠNG RÂU TÓC BULLDOG ORIGINAL BEARD OIL</h3>
+                            <input type="text" value="3" id="" name="">
+                            <span class="total-amount">2.520.000đ</span>
+                        </div>
+
+                        <div class="box-confirm">
+                            <div class="img-confirmCart">
+                                <img src="./images/products-img/sp1.jpg" alt="">
+                            </div>
+                            <h3 class="name-confirmCart">DẦU DƯỠNG RÂU TÓC BULLDOG ORIGINAL BEARD OIL</h3>
+                            <input type="text" value="3" id="" name="">
+                            <span class="total-amount">2.520.000đ</span>
+                        </div>
+
+                        <div class="box-confirm">
+                            <div class="img-confirmCart">
+                                <img src="./images/products-img/sp1.jpg" alt=""> 
+                            </div>
+                            <h3 class="name-confirmCart">DẦU DƯỠNG RÂU TÓC BULLDOG ORIGINAL BEARD OIL</h3>
+                            <input type="text" value="3" id="" name="">
+                            <span class="total-amount">2.520.000đ</span>
+                        </div>
+
+                        <div class="box-confirm">
+                            <div class="img-confirmCart">
+                                <img src="./images/products-img/sp1.jpg" alt=""> 
+                            </div>
+                            <h3 class="name-confirmCart">DẦU DƯỠNG RÂU TÓC BULLDOG ORIGINAL BEARD OIL</h3>
+                            <input type="text" value="3" id="" name="">
+                            <span class="total-amount">2.520.000đ</span>
+                        </div>
+
+                        <div class="box-confirm">
+                            <div class="img-confirmCart">
+                                <img src="./images/products-img/sp1.jpg" alt="">  
+                            </div>
+                            <h3 class="name-confirmCart">DẦU DƯỠNG RÂU TÓC BULLDOG ORIGINAL BEARD OIL</h3>
+                            <input type="text" value="3" id="" name="">
+                            <span class="total-amount">2.520.000đ</span>
+                        </div>
+                    </div>
+
+                    <form id="box-discountInput">
+                        <div class="box">
+                            <input type="text" id="discountInput" placeholder="Nhập mã giảm giá">
+                            <input type="submit" value="Sử dụng" class="btn-send"  name="">
+                        </div>
+
+                        <script>
+                            // const formDiscount = document.getElementById('box-discountInput')
+                            let inputDiscount = document.getElementById('discountInput')
+                            let submitDiscount = document.getElementById('btn-send')
+
+                            
+                                if(inputDiscount.value.trim() != '') {
+                                    submitDiscount.classList.add('active')
+                                }
+                            
+                        </script>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+</body>
+</html>
